@@ -51,7 +51,7 @@ linux-workflow: &linux-workflow
         start: yarn start:ci
         record: true
         parallel: true
-        parallelism: 5
+        parallelism: 3
         ci-build-id: ${CIRCLE_SHA1:0:8}
         group: API
         requires:
@@ -175,7 +175,7 @@ windows-workflow: &windows-workflow
         start: yarn start:ci
         record: true
         parallel: true
-        parallelism: 5
+        parallelism: 3
         ci-build-id: ${CIRCLE_SHA1:0:8}
         group: "UI - Electron - Windows"
         requires:
